@@ -11,12 +11,12 @@ locale.setlocale(locale.LC_ALL, '')
 def get_average(numbers):
     """get average of list"""
 
-    sum = 0
+    add_nums = 0
 
     for val in numbers:
-        sum += val
+        add_nums += val
 
-    mean = float(sum)/len(numbers)
+    mean = float(add_nums)/len(numbers)
 
     return mean
 
@@ -33,7 +33,10 @@ TASK 02 Report
 Total AVG:  {}
 Even AVG:   {}
 Odd AVG:    {}
-""".format(locale.format('%.2f', TOTAL_AVG, True), locale.format('%.2f', EVEN_AVG, True), locale.format('%.2f', ODD_AVG, True))
+""".format(
+    locale.format('%.2f', TOTAL_AVG, True),
+    locale.format('%.2f', EVEN_AVG, True),
+    locale.format('%.2f', ODD_AVG, True)
+)
 
 print REPORT
-
