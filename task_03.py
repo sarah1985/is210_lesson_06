@@ -6,6 +6,7 @@ import data
 
 
 def bubble_sort(list_input):
+    """bubble sort a list"""
 
     swapped = False
     first_run = True
@@ -19,13 +20,12 @@ def bubble_sort(list_input):
 
             if list_input[i - 1] > list_input[i]:
 
-                a = list_input[i - 1]
+                temp = list_input[i - 1]
                 list_input[i-1] = list_input[i]
-                list_input[i] = a
+                list_input[i] = temp
                 swapped = True
 
     return list_input
 
-
-#a = [5, 1, 9, 8, 6, 3, 0]
-#sprint bubble_sort(a)
+SORT = bubble_sort(data.TASK_O1)
+print SORT
