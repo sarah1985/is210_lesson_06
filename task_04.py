@@ -36,12 +36,8 @@ def report(weak_passwords):
         return """
         Cracked passwords
         --------------------------------------
-        """
+        {} {}
+        """.format(name, password)
 
 REPORT = report(test_passwords(data.PASSWD))
 print REPORT
-
-
-#if __name__ == "__main__":
- #   print crack_it('ckRzvUxfMC2KC4ENIyRRSiC1eZQ=')
-  #  print test_passwords(data.PASSWD)
